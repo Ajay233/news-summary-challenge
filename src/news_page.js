@@ -1,3 +1,4 @@
+(function(exports){
 var Headlines = function(){
   this.headlines = [];
 };
@@ -5,3 +6,6 @@ var Headlines = function(){
 Headlines.prototype.addNewsStory = function (newsStory) {
   this.headlines.push(newsStory)
 };
+
+exports.Headlines = Headlines;
+})(this);
